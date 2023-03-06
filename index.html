@@ -298,6 +298,31 @@
     <script src="assets/js/smart-forms.min.js"></script>
     <script src="assets/js/bs-init.js"></script>
     <script src="assets/js/bold-and-dark.js"></script>
+
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/9.17.2/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+            apiKey: "AIzaSyCz0gXnMoSBiZrsPIezo8OKO8G9JAZXBLo",
+            authDomain: "qrcode-rafthedev.firebaseapp.com",
+            projectId: "qrcode-rafthedev",
+            storageBucket: "qrcode-rafthedev.appspot.com",
+            messagingSenderId: "555300307262",
+            appId: "1:555300307262:web:ff0150438bf1c3395fac6f",
+            measurementId: "G-4ZTXRRZHF6"
+        };
+
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+    </script>
+
 </body>
 
 </html>
